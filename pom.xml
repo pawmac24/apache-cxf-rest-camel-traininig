@@ -17,12 +17,6 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<camel-version>2.17.3</camel-version>
 		<cxf.version>3.1.7</cxf.version>
-		<cxf-xjc-ts.version>3.0.5</cxf-xjc-ts.version>
-		<commons-dbcp-version>1.4</commons-dbcp-version>	
-		<jaxb2-basics.version>0.6.4</jaxb2-basics.version>
-		<jaxb2-commons.version>2.3</jaxb2-commons.version>
-		<collection-setter-injector.version>0.5.0-1</collection-setter-injector.version>
-		<xjc-guava-plugin.version>0.3</xjc-guava-plugin.version>			
 	</properties>
 
 	<dependencies>		
@@ -73,12 +67,6 @@
 		    <artifactId>cxf-rt-frontend-jaxrs</artifactId>
 		    <version>${cxf.version}</version>
 		</dependency>
-		<!-- <dependency>
-			<groupId>org.apache.cxf</groupId>
-			<artifactId>cxf-rt-rs-extension-providers</artifactId>
-			<version>${cxf.version}</version>
-			<scope>test</scope>
-		</dependency> -->
 
 		<!-- logging -->
 		<dependency>
@@ -102,36 +90,6 @@
 		    <artifactId>jackson-jaxrs</artifactId>
 		    <version>1.9.13</version>
 		</dependency>
-		<dependency>
-		    <groupId>org.codehaus.jackson</groupId>
-		    <artifactId>jackson-xc</artifactId>
-		    <version>1.9.13</version>
-		</dependency>
-		
-		<!-- <dependency>
-		    <groupId>org.codehaus.jackson</groupId>
-		    <artifactId>jackson-mapper-asl</artifactId>
-		    <version>1.9.13</version>
-		</dependency> -->
-		
-		<!-- <dependency>
-		  <groupId>org.apache.camel</groupId>
-		  <artifactId>camel-jacksonxml</artifactId>
-		  <version>${camel-version}</version>		  
-		</dependency> -->
-		
-		<!-- <dependency>
-		  <groupId>org.apache.camel</groupId>
-		  <artifactId>camel-jackson</artifactId>
-		  <version>${camel-version}</version>	
-		</dependency> -->
-		
-		<!-- <dependency>
-		  <groupId>xom</groupId>
-		  <artifactId>xom</artifactId>
-		  <version>1.2.5</version>
-		</dependency> -->				
-		
 
 		<!-- testing -->
 		<dependency>
@@ -147,32 +105,6 @@
 	      <version>4.12</version>
 	      <scope>test</scope>
 	    </dependency>
-	    
-	    <dependency>
-			<groupId>org.jvnet.jaxb2_commons</groupId>
-			<artifactId>jaxb2-basics</artifactId>
-			<version>${jaxb2-basics.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>com.github.danielwegener.xjc</groupId>
-			<artifactId>xjc-guava-plugin</artifactId>
-			<version>${xjc-guava-plugin.version}</version>
-		</dependency>							
-		<dependency>
-			<groupId>org.apache.cxf.xjcplugins</groupId>
-			<artifactId>cxf-xjc-ts</artifactId>
-			<version>${cxf-xjc-ts.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.jvnet.jaxb2_commons</groupId>
-			<artifactId>jaxb2-commons-lang</artifactId>
-			<version>${jaxb2-commons.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>net.java.dev.vcc.thirdparty</groupId>
-			<artifactId>collection-setter-injector</artifactId>
-			<version>${collection-setter-injector.version}</version>
-		</dependency>
 
 	</dependencies>
 
@@ -195,9 +127,6 @@
 								<wsdlOption>
 									<!--<wsdl>http://localhost:8080/apache-cxf-jaxws-server/services/orders?wsdl</wsdl>-->
 									<wsdl>${basedir}/src/main/resources/wsdl/Orders.wsdl</wsdl>
-									<bindingFiles>
-										<bindingFile>${basedir}/src/main/resources/binding.xml</bindingFile>
-									</bindingFiles>
 								</wsdlOption>
 							</wsdlOptions>
 						</configuration>

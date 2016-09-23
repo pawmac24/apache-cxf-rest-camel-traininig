@@ -1,7 +1,6 @@
 
 package com.pgs.schema.order;
 
-import java.io.Serializable;
 import java.math.BigDecimal;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -42,11 +41,8 @@ import javax.xml.datatype.XMLGregorianCalendar;
     "price",
     "quantityShipped"
 })
-public class OrderItemType
-    implements Serializable
-{
+public class OrderItemType {
 
-    private final static long serialVersionUID = 1L;
     protected int lineNumber;
     @XmlSchemaType(name = "date")
     protected XMLGregorianCalendar expectedShippingDate;

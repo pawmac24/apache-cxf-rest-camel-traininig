@@ -1,7 +1,6 @@
 
 package com.pgs.schema.order;
 
-import java.io.Serializable;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlType;
@@ -36,11 +35,8 @@ import javax.xml.bind.annotation.XmlType;
     "accountId",
     "ean13"
 })
-public class OrderInquiryType
-    implements Serializable
-{
+public class OrderInquiryType {
 
-    private final static long serialVersionUID = 1L;
     protected int uniqueOrderId;
     protected int orderQuantity;
     protected int accountId;

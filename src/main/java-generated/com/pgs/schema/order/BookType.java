@@ -1,7 +1,6 @@
 
 package com.pgs.schema.order;
 
-import java.io.Serializable;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -33,11 +32,8 @@ import javax.xml.bind.annotation.XmlType;
     "ean13",
     "title"
 })
-public class BookType
-    implements Serializable
-{
+public class BookType {
 
-    private final static long serialVersionUID = 1L;
     protected long ean13;
     @XmlElement(required = true)
     protected String title;
